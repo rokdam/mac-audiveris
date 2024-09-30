@@ -14,7 +14,7 @@ import java.nio.file.Path;
 @RequestMapping("/audiveris")
 public class AudiverisController {
 
-    private static final String AUDIVERIS_PATH = "../audiveris/build/libs"; // Audiveris 설치 경로
+    private static final String AUDIVERIS_PATH = "../audiveris/build/jar"; // Audiveris 설치 경로
 
     @PostMapping("/process")
     public ResponseEntity<String> processScore(@RequestParam("file") MultipartFile file) {
