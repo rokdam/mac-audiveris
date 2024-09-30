@@ -9,13 +9,12 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 @RestController
 @RequestMapping("/audiveris")
 public class AudiverisController {
 
-    private static final String AUDIVERIS_PATH = "/path/to/audiveris/build/libs"; // Audiveris 설치 경로
+    private static final String AUDIVERIS_PATH = "../audiveris/build/libs"; // Audiveris 설치 경로
 
     @PostMapping("/process")
     public ResponseEntity<String> processScore(@RequestParam("file") MultipartFile file) {
